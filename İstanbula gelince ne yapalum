@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>İstanbul Anketi</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sevgilim, İstanbul'da Ne Yapmalıyız?</h1>
+        <form>
+            <div class="option">
+                <input type="radio" id="taksim" name="activity" value="Taksim Meydanı'nda yürüyüş">
+                <label for="taksim">Taksim Meydanı'nda yürüyüş</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="sultanahmet" name="activity" value="Sultanahmet Camii'ni ziyaret">
+                <label for="sultanahmet">Sultanahmet Camii'ni ziyaret</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="bosfor" name="activity" value="Boğaz'da tekne turu">
+                <label for="bosfor">Boğaz'da tekne turu</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="cafeler" name="activity" value="Cafelerde oturup sohbet">
+                <label for="cafeler">Cafelerde oturup sohbet</label>
+            </div>
+            <button type="submit" class="submit-button">Gönder</button>
+        </form>
+    </div>
+</body>
+</html>
