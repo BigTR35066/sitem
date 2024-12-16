@@ -1,15 +1,13 @@
 document.querySelectorAll('input[type="radio"]').forEach(radio => {
     radio.addEventListener('change', function() {
-        // Önce tüm etiketlerin stillerini sıfırlayın
+        // Tüm label'lardan selected sınıfını kaldır
         document.querySelectorAll('label').forEach(label => {
-            label.style.backgroundColor = '#ffb3d1'; // Normal arka plan
-            label.style.color = '#000'; // Normal metin rengi
+            label.classList.remove('selected'); // Seçili sınıfı çıkar
         });
 
-        // Seçili radio butonunun etiketini koyulaştırın
+        // Seçili radio butonunun etiketine selected sınıfı ekle
         const selectedLabel = document.querySelector(`label[for="${this.id}"]`);
-        selectedLabel.style.backgroundColor = '#ff4d94'; // Seçili arka plan
-        selectedLabel.style.color = '#fff'; // Seçili metin rengi
+        selectedLabel.classList.add('selected'); // Seçili sınıfı ekle
     });
 });
 
