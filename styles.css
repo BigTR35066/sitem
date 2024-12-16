@@ -1,93 +1,30 @@
 body {
-    background-color: #f9e0e6;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 .container {
-    max-width: 600px;
-    margin: auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 1;
-}
-
-h1 {
-    color: #ff4d94;
-    font-size: 26px;
-}
-
-.emoji-title {
-    font-size: 36px;
-    color: #ff4d94;
-    margin: 15px 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.option {
-    margin: 15px 0;
-}
-
-input[type="radio"] {
-    display: none;
+    margin: 20px;
 }
 
 label {
-    background-color: #ffb3d1;
+    background-color: #ffb3d1; /* Normal arka plan rengi */
     border-radius: 5px;
     padding: 10px;
     display: block;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background-color 0.3s, color 0.3s; /* Geçiş efektleri */
 }
 
-label:hover {
-    background-color: #ff4d94;
-    color: #fff;
+label.selected {
+    background-color: #ff4d94; /* Seçili arka plan rengi */
+    color: #fff; /* Seçili metin rengi */
 }
 
-label:active {
-    background-color: #d62b79; /* Koyu renk */
-    transform: scale(0.95); /* Küçülme efekti */
+input[type="radio"]:hover + label {
+    background-color: #ff4d94; /* Hover sırasında arka plan rengi */
 }
 
-.buttons {
-    margin-top: 20px;
-}
-
-.next-button {
-    background-color: #ff4d94;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s, transform 0.2s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.next-button:hover {
-    background-color: #d62b79;
-}
-
-.next-button:active {
-    background-color: #bb2d6e; /* Koyu renk */
-    transform: scale(0.95); /* Küçülme efekti */
-}
-
-.background-image {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    opacity: 0.2;
+input[type="radio"]:checked + label {
+    background-color: #ff4d94; /* Seçili arka plan rengi */
+    color: #fff; /* Seçili metin rengi */
 }
