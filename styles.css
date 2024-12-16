@@ -44,12 +44,17 @@ label {
     padding: 10px;
     display: block;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 label:hover {
     background-color: #ff4d94;
     color: #fff;
+}
+
+label:active {
+    background-color: #d62b79; /* Koyu renk */
+    transform: scale(0.95); /* Küçülme efekti */
 }
 
 .buttons {
@@ -64,11 +69,17 @@ label:hover {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 18px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .next-button:hover {
     background-color: #d62b79;
+}
+
+.next-button:active {
+    background-color: #bb2d6e; /* Koyu renk */
+    transform: scale(0.95); /* Küçülme efekti */
 }
 
 .background-image {
