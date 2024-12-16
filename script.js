@@ -3,8 +3,9 @@ document.querySelectorAll('input[type="radio"]').forEach(radio => {
         // Önce tüm etiketlerin stillerini sıfırlayın
         document.querySelectorAll('label').forEach(label => {
             label.style.backgroundColor = '#ffb3d1'; // Normal arka plan
+            label.style.color = '#000'; // Normal metin rengi
         });
-        
+
         // Seçili radio butonunun etiketini koyulaştırın
         const selectedLabel = document.querySelector(`label[for="${this.id}"]`);
         selectedLabel.style.backgroundColor = '#ff4d94'; // Seçili arka plan
